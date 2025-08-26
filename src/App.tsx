@@ -413,6 +413,16 @@ export default function App() {
                     {t.tips.qualityRecommendation}
                   </div>
                 </div>
+                
+                <button 
+                  className="action-btn" 
+                  onClick={() => {
+                    setCurrentState('tool-selection');
+                    startProcessing();
+                  }}
+                >
+                  🗜️ Comprimi Immagini
+                </button>
               </div>
             )}
 
@@ -516,6 +526,16 @@ export default function App() {
                     <span>Se una dimensione è 0, verrà mantenuta la proporzione originale</span>
                   </div>
                 </div>
+                
+                <button 
+                  className="action-btn" 
+                  onClick={() => {
+                    setCurrentState('tool-selection');
+                    startProcessing();
+                  }}
+                >
+                  📐 Ridimensiona Immagini
+                </button>
               </div>
             )}
 
@@ -786,6 +806,16 @@ export default function App() {
                     </button>
                   </div>
                 </div>
+                
+                <button 
+                  className="action-btn" 
+                  onClick={() => {
+                    setCurrentState('tool-selection');
+                    startProcessing();
+                  }}
+                >
+                  🔄 Ruota di {rotationAngle}°
+                </button>
               </div>
             )}
 
