@@ -334,7 +334,7 @@ export default function App() {
             <label className="upload-area">
               <input 
                 type="file" 
-                accept="image/*" 
+                accept="image/*,.heic,.HEIC,.avif,.AVIF" 
                 multiple 
                 onChange={(e) => handleFileUpload(e.target.files)}
               />
@@ -890,6 +890,19 @@ export default function App() {
                         <span className="feature">Compatto</span>
                       </div>
                     </div>
+                    
+                    <div 
+                      className={`format-card ${convertFormatType === 'avif' ? 'active' : ''}`}
+                      onClick={() => setConvertFormatType('avif')}
+                    >
+                      <div className="format-icon">✨</div>
+                      <div className="format-name">AVIF</div>
+                      <div className="format-desc">Next-gen</div>
+                      <div className="format-features">
+                        <span className="feature">-50% dimensioni</span>
+                        <span className="feature">HDR support</span>
+                      </div>
+                    </div>
                   </div>
                 </div>
 
@@ -951,6 +964,14 @@ export default function App() {
                         <div className="benefit">✅ File compatti</div>
                         <div className="benefit">✅ Ideale per foto</div>
                         <div className="benefit">⚠️ Perde trasparenza</div>
+                      </div>
+                    )}
+                    {convertFormatType === 'avif' && (
+                      <div className="benefit-list">
+                        <div className="benefit">✅ Massima compressione (-50%)</div>
+                        <div className="benefit">✅ Qualità eccellente</div>
+                        <div className="benefit">✅ Supporto HDR e trasparenza</div>
+                        <div className="benefit">⚠️ Browser moderni only</div>
                       </div>
                     )}
                   </div>

@@ -601,7 +601,7 @@ export const translations: Record<string, Translation> = {
     tips: {
       qualityRecommendation: "Per una qualità ottimale, senza evidente perdita visibile di qualità si consiglia di stare tra 70-80%.",
       aspectRatioNote: "Se una dimensione è 0, verrà mantenuta la proporzione originale",
-      uploadSupported: "Supportati: JPG, PNG, GIF, SVG, WEBP",
+      uploadSupported: "Supportati: JPG, PNG, GIF, SVG, WEBP, HEIC, AVIF",
       maxFiles: "max 20 file",
       dragAndDrop: "Trascina e rilascia qui le tue immagini"
     },
@@ -938,7 +938,7 @@ export const translations: Record<string, Translation> = {
     tips: {
       qualityRecommendation: "For optimal quality without visible loss, we recommend staying between 70-80%.",
       aspectRatioNote: "If one dimension is 0, original aspect ratio will be maintained",
-      uploadSupported: "Supported: JPG, PNG, GIF, SVG, WEBP",
+      uploadSupported: "Supported: JPG, PNG, GIF, SVG, WEBP, HEIC, AVIF",
       maxFiles: "max 20 files",
       dragAndDrop: "Drag and drop your images here"
     },
@@ -1239,7 +1239,7 @@ export const translations: Record<string, Translation> = {
     tips: {
       qualityRecommendation: "Pour une qualité optimale sans perte visible, nous recommandons de rester entre 70-80%.",
       aspectRatioNote: "Si une dimension est 0, les proportions originales seront maintenues",
-      uploadSupported: "Supportés: JPG, PNG, GIF, SVG, WEBP",
+      uploadSupported: "Supportés: JPG, PNG, GIF, SVG, WEBP, HEIC, AVIF",
       maxFiles: "max 20 fichiers",
       dragAndDrop: "Glissez et déposez vos images ici"
     },
@@ -1540,7 +1540,7 @@ export const translations: Record<string, Translation> = {
     tips: {
       qualityRecommendation: "Für optimale Qualität ohne sichtbaren Verlust empfehlen wir 70-80%.",
       aspectRatioNote: "Wenn eine Dimension 0 ist, wird das ursprüngliche Seitenverhältnis beibehalten",
-      uploadSupported: "Unterstützt: JPG, PNG, GIF, SVG, WEBP",
+      uploadSupported: "Unterstützt: JPG, PNG, GIF, SVG, WEBP, HEIC, AVIF",
       maxFiles: "max 20 Dateien",
       dragAndDrop: "Ziehen Sie Ihre Bilder hierher"
     },
@@ -1852,7 +1852,7 @@ export const translations: Record<string, Translation> = {
     tips: {
       qualityRecommendation: "Para calidad óptima sin pérdida visible, recomendamos mantenerse entre 70-80%.",
       aspectRatioNote: "Si una dimensión es 0, se mantendrá la proporción original",
-      uploadSupported: "Soportados: JPG, PNG, GIF, SVG, WEBP",
+      uploadSupported: "Soportados: JPG, PNG, GIF, SVG, WEBP, HEIC, AVIF",
       maxFiles: "máx 20 archivos",
       dragAndDrop: "Arrastra y suelta tus imágenes aquí"
     },
@@ -2142,7 +2142,7 @@ export const translations: Record<string, Translation> = {
     tips: {
       qualityRecommendation: "Para qualidade ótima sem perda visível, recomendamos ficar entre 70-80%.",
       aspectRatioNote: "Se uma dimensão for 0, a proporção original será mantida",
-      uploadSupported: "Suportados: JPG, PNG, GIF, SVG, WEBP",
+      uploadSupported: "Suportados: JPG, PNG, GIF, SVG, WEBP, HEIC, AVIF",
       maxFiles: "máx 20 arquivos",
       dragAndDrop: "Arraste e solte suas imagens aqui"
     },

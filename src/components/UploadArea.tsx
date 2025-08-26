@@ -31,7 +31,7 @@ export default function UploadArea({ files, setFiles }: Props) {
       <label className="dropzone" onDrop={onDrop} onDragOver={onDragOver}>
         <input 
           type="file" 
-          accept="image/*" 
+          accept="image/*,.heic,.HEIC,.avif,.AVIF" 
           multiple 
           onChange={onInputChange}
           className="file-input"
@@ -40,7 +40,7 @@ export default function UploadArea({ files, setFiles }: Props) {
           <div className="upload-icon">📁</div>
           <div className="upload-text">
             <strong>Clicca qui o trascina le immagini</strong>
-            <p>Supportati: JPG, PNG, GIF, SVG, WEBP (max 20 file)</p>
+            <p>Supportati: JPG, PNG, GIF, SVG, WEBP, HEIC, AVIF (max 20 file)</p>
           </div>
         </div>
       </label>

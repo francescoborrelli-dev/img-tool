@@ -10,7 +10,7 @@
 - **Ridimensionamento** (canvas, preset e personalizzato)
 - **Ritaglio** (canvas, libero, proporzioni, preset social)
 - **Rotazione** (canvas, angoli rapidi)
-- **Conversione formato** (JPG, PNG, WebP, JPEG, AVIF)
+- **Conversione formato** (JPG, PNG, WebP, JPEG, AVIF, HEIC)
 - **Rinomina** (bulk e individuale, preview nomi)
 - **Download ZIP** di tutti i file elaborati
 - **Progress bar** e stato processing
