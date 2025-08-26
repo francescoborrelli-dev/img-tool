@@ -51,7 +51,7 @@ export default function BulkConvertPanel({ files }: Props){
       </label>
 
       <div style={{marginTop:8}}>
-        <button onClick={convertAll}>Converti e scarica</button>
+        <button className="action-btn" onClick={convertAll}>Converti e scarica</button>
       </div>
     </section>
   )

@@ -80,13 +80,13 @@ export default function EditorPanel({ files, setFiles }: Props) {
               <div className="size">{(file.size / 1024).toFixed(1)} KB</div>
             </div>
             <div className="actions">
-              <button className="btn btn-primary" onClick={() => handleCompress(index)}>
+              <button className="action-btn" onClick={() => handleCompress(index)}>
                 Comprimi
               </button>
-              <button className="btn btn-secondary" onClick={() => handleResize(index)}>
+              <button className="action-btn" onClick={() => handleResize(index)}>
                 Ridimensiona
               </button>
-              <button className="btn btn-secondary" onClick={() => handleRotate(index)}>
+              <button className="action-btn" onClick={() => handleRotate(index)}>
                 Ruota
               </button>
             </div>
