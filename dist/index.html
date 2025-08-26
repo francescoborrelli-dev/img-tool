@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="it">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IMG Tool - Editor di Immagini Online Gratuito | Comprimi, Ridimensiona, Converti</title>
+    <meta name="description" content="IMG Tool è il tuo editor di immagini online gratuito. Comprimi, ridimensiona, ruota, converte e modifica le tue immagini istantaneamente nel browser. Supporta JPG, PNG, WEBP, GIF e SVG." />
+    <meta name="keywords" content="editor immagini, compressione immagini, ridimensiona foto, convertitore formato, tool online gratuito, jpg png webp, ottimizzazione immagini" />
+    <meta name="author" content="Francesco Borrelli" />
+    <meta name="robots" content="index, follow" />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="IMG Tool - Editor di Immagini Online Gratuito" />
+    <meta property="og:description" content="Comprimi, ridimensiona, converti e modifica le tue immagini gratuitamente online. Supporta tutti i formati principali." />
+    <meta property="og:image" content="/imgtool.png" />
+    <meta property="og:url" content="https://imgtool.netlify.app" />
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="IMG Tool - Editor di Immagini Online Gratuito" />
+    <meta name="twitter:description" content="Comprimi, ridimensiona, converti e modifica le tue immagini gratuitamente online." />
+    <meta name="twitter:image" content="/imgtool.png" />
+    
+    <!-- Favicons -->
+    <link rel="icon" type="image/png" href="/imgtool.png" />
+    <link rel="apple-touch-icon" href="/imgtool.png" />
+    <link rel="manifest" href="/manifest.json" />
+    
+    <!-- Performance hints -->
+    <link rel="preconnect" href="https://cdnjs.buymeacoffee.com" />
+    <script type="module" crossorigin src="/assets/index-1REmGNTU.js"></script>
+    <link rel="modulepreload" crossorigin href="/assets/vendor-BWMK5nIM.js">
+    <link rel="modulepreload" crossorigin href="/assets/utils-Dc9imA7f.js">
+    <link rel="stylesheet" crossorigin href="/assets/index-iwzTcZIY.css">
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="borealedeso" data-color="#f09833" data-emoji="🍻"  data-font="Inter" data-text="Buy me a Beer" data-outline-color="#000000" data-font-color="#000000" data-coffee-color="#FFDD00" ></script>
+    <script>
+      // Forza il posizionamento del bottone Buy me a Coffee
+      setTimeout(() => {
+        const bmcButton = document.querySelector('[data-name="bmc-button"]') || 
+                         document.querySelector('#bmc-wbtn') || 
+                         document.querySelector('.bmc-btn') ||
+                         document.querySelector('.bmc-button');
+        if (bmcButton) {
+          bmcButton.style.position = 'fixed';
+          bmcButton.style.bottom = '20px';
+          bmcButton.style.right = '20px';
+          bmcButton.style.left = 'auto';
+          bmcButton.style.top = 'auto';
+          bmcButton.style.zIndex = '9999';
+          bmcButton.style.margin = '0';
+          bmcButton.style.transform = 'scale(0.75)';
+          bmcButton.style.transformOrigin = 'bottom right';
+          bmcButton.style.opacity = '0.8';
+        }
+      }, 1000);
+      
+      // Controlla ogni 2 secondi se il bottone è ancora posizionato correttamente
+      setInterval(() => {
+        const bmcButton = document.querySelector('[data-name="bmc-button"]') || 
+                         document.querySelector('#bmc-wbtn') || 
+                         document.querySelector('.bmc-btn') ||
+                         document.querySelector('.bmc-button');
+        if (bmcButton && (bmcButton.style.position !== 'fixed' || bmcButton.style.right !== '20px')) {
+          bmcButton.style.position = 'fixed';
+          bmcButton.style.bottom = '20px';
+          bmcButton.style.right = '20px';
+          bmcButton.style.left = 'auto';
+          bmcButton.style.top = 'auto';
+          bmcButton.style.zIndex = '9999';
+          bmcButton.style.margin = '0';
+          bmcButton.style.transform = 'scale(0.75)';
+          bmcButton.style.transformOrigin = 'bottom right';
+        }
+      }, 2000);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://imgtool.netlify.app/sitemap.xml

@@ -1,0 +1,21 @@
+{
+  "name": "IMG Tool - Editor di Immagini Online",
+  "short_name": "IMG Tool",
+  "description": "Editor di immagini online gratuito per comprimere, ridimensionare e convertire foto",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#ff6b35",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/imgtool.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["photo", "productivity", "utilities"],
+  "lang": "it",
+  "scope": "/"
+}
