@@ -1678,13 +1678,13 @@ body {
   }
 }
 
-/* Buy me a Beer button - POSIZIONATO IN ALTO A DESTRA */
+/* Buy me a Beer button - POSIZIONATO IN BASSO A DESTRA */
 [data-name="bmc-button"],
 .bmc-button,
 iframe[src*="buymeacoffee"],
 a[href*="buymeacoffee"] {
   position: fixed !important;
-  top: 80px !important;
+  bottom: 20px !important;
   right: 16px !important;
   z-index: 99999 !important;
   border-radius: 8px !important;
@@ -1705,13 +1705,13 @@ a[href*="buymeacoffee"]:hover {
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2) !important;
 }
 
-/* Mobile adjustments for Buy me a Beer - TOP RIGHT */
+/* Mobile adjustments for Buy me a Beer - BOTTOM RIGHT */
 @media (max-width: 390px) {
   [data-name="bmc-button"],
   .bmc-button,
   iframe[src*="buymeacoffee"],
   a[href*="buymeacoffee"] {
-    top: 70px !important;
+    bottom: 20px !important;
     right: 10px !important;
     max-width: 120px !important;
     font-size: 11px !important;
