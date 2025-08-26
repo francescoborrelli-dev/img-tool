@@ -28,12 +28,12 @@ export default function EditorPanel({ files, setFiles }: Props) {
 
   async function handleRotate(index: number){
     const f = files[index]
-    const blob = await rotateImage(f, angle, f.type)
-    fileSaver.saveAs(blobToFile(blob, f.name))
+    const blob = await rotateImage(f, angle)
+    fileSaver.saveAs(blob)
   }
 
   return (
-    <div className="editor-panel">
+    <div className="editor-panel tool-settings">
       <h3>Strumenti di editing</h3>
       
       <div className="controls">

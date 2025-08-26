@@ -675,8 +675,10 @@ body {
     min-width: 0;
   }
   
-  /* Fixed CTA button at bottom */
-  .action-btn {
+  /* Fixed CTA button at bottom - only for single action buttons */
+  .tool-settings:not(.editor-panel) .action-btn:not(.actions .action-btn),
+  .crop-panel .action-btn,
+  .bulk-convert-panel .action-btn {
     position: fixed;
     bottom: 0;
     left: 0;
@@ -692,7 +694,9 @@ body {
     background: linear-gradient(135deg, #ff6b35 0%, #f7931e 100%);
   }
   
-  .action-btn:hover {
+  .tool-settings:not(.editor-panel) .action-btn:not(.actions .action-btn):hover,
+  .crop-panel .action-btn:hover,
+  .bulk-convert-panel .action-btn:hover {
     transform: none;
     box-shadow: 0 -4px 20px rgba(0,0,0,0.2);
   }
@@ -784,9 +788,11 @@ body {
     display: flex;
     flex-direction: column;
     gap: 8px;
+    margin-bottom: 60px; /* Add space for Buy me a Beer button */
   }
   
-  .actions .action-btn {
+  .actions .action-btn,
+  .editor-panel .action-btn {
     position: static;
     margin: 0;
     border-radius: 12px;
@@ -796,9 +802,83 @@ body {
     box-shadow: 0 2px 8px rgba(255, 107, 53, 0.2);
   }
   
-  .actions .action-btn:hover {
+  .actions .action-btn:hover,
+  .editor-panel .action-btn:hover {
     transform: translateY(-1px);
     box-shadow: 0 4px 12px rgba(255, 107, 53, 0.3);
+  }
+  
+  /* Editor panel specific styles */
+  .editor-panel {
+    margin-bottom: 80px;
+  }
+  
+  .editor-panel .file-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+  .editor-panel .file-item {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 16px;
+    border: 1px solid #e9ecef;
+    border-radius: 12px;
+    background: white;
+  }
+  
+  .editor-panel .file-item img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    border-radius: 8px;
+    align-self: center;
+  }
+  
+  .editor-panel .file-info {
+    text-align: center;
+  }
+  
+  .editor-panel .file-info .name {
+    font-weight: 600;
+    font-size: 14px;
+    margin-bottom: 4px;
+  }
+  
+  .editor-panel .file-info .size {
+    font-size: 12px;
+    color: #666;
+  }
+  
+  /* Editor panel controls */
+  .editor-panel .controls {
+    margin-bottom: 20px;
+  }
+  
+  .editor-panel .control-group {
+    margin-bottom: 16px;
+  }
+  
+  .editor-panel .control-group label {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 8px;
+  }
+  
+  .editor-panel input[type="range"] {
+    width: 100%;
+    margin: 8px 0;
+  }
+  
+  .editor-panel input[type="number"] {
+    width: 100%;
+    padding: 8px 12px;
+    border: 1px solid #e9ecef;
+    border-radius: 8px;
+    font-size: 14px;
   }
 }
 
@@ -1528,6 +1608,36 @@ body {
 @media (min-width: 1025px) {
   .format-grid {
     grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Buy me a Beer button */
+[data-name="bmc-button"],
+.bmc-button {
+  position: fixed !important;
+  bottom: 20px !important;
+  right: 20px !important;
+  z-index: 9999 !important;
+  border-radius: 12px !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15) !important;
+  transition: all 0.3s ease !important;
+}
+
+[data-name="bmc-button"]:hover,
+.bmc-button:hover {
+  transform: translateY(-2px) !important;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.25) !important;
+}
+
+/* Mobile adjustments for Buy me a Beer */
+@media (max-width: 390px) {
+  [data-name="bmc-button"],
+  .bmc-button {
+    bottom: 12px !important;
+    right: 12px !important;
+    width: auto !important;
+    font-size: 14px !important;
+    padding: 8px 12px !important;
   }
 }
 

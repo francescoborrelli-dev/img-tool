@@ -31,7 +31,7 @@ export const CropPanel: React.FC<CropPanelProps> = ({ onCrop }) => {
   };
 
   return (
-    <div className="tool-settings">
+    <div className="tool-settings crop-panel">
       <h3>✂️ Ritaglia Immagini</h3>
       
       {/* Modalità di ritaglio */}

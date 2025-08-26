@@ -29,7 +29,7 @@ export default function BulkConvertPanel({ files }: Props){
   if (files.length===0) return <div style={{padding:12}}>Carica immagini per conversione bulk.</div>
 
   return (
-    <section style={{background:'var(--card)',padding:12,borderRadius:12}}>
+    <section className="tool-settings bulk-convert-panel" style={{background:'var(--card)',padding:12,borderRadius:12}}>
       <h3>Bulk convert & rename</h3>
       <label>
         Formato di destinazione:
